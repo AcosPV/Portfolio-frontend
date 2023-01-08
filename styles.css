@@ -1,0 +1,52 @@
+.col-1 img{
+    background-color: lightblue;
+    height: 50px;
+}
+#banner{
+    width: 100%;
+}
+#button{
+    float: right;
+}
+.container{
+    border-top: 2px solid yellow;
+    margin-top: 2rem;
+}
+#contenido{
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+    margin-bottom: 2rem;
+}
+#profile{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+}
+.img{
+    width: 150px;
+    margin-left: 3rem;
+}
+.pie {
+    --w:150px;
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    place-content: center;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  .pie:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
